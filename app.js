@@ -37,4 +37,5 @@ reset.addEventListener('click',resetcall);
  function resetcall (){
        counter.innerHTML = '0';
        counter.style.color = 'white';
+       count='0';
     }
