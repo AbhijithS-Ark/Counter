@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background:url(./pngtree-dark-abstract-background-with-overlap-layers-image_305024.jpg) no-repeat center;
+    background-size:cover;
+    height:100vh;
+    width:100vw;                                                                                                                                                                                                                                                                     
+
+}
+.container{
+    position:relative;
+    text-align:center;
+    font-family:'Iceberg',cursive;
+}
+.heading{
+    color:#fff;
+    font-size:3rem;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    font-size:3.5rem;
+}
+.counter{
+    color:white;
+    font-size:4rem; 
+}
+
+.lowerbtn,.addbtn{
+
+    background:radial-gradient(#13bebe,#13243E);
+    margin:0 25px 0 0 ;
+    padding:10px;
+    border-radius:5px;
+    color:#fff;
+    font-size:1.5rem;
+    outline:none;
+    border:none;
+    transition:all 0.4s ease-in-out;
+    transform: scale(1);
+    font-family:'Iceberg',cursive;
+}
+
+.lowerbtn:hover,.addbtn:hover{
+    transform: scale(1.1);
+}
+.lowerbtn:active,.addbtn:active{
+   box-shadow:2px 2px 20px 2px #13bebe;
+}
