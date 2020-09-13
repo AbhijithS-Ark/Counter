@@ -51,3 +51,24 @@ body{
 .lowerbtn:active,.addbtn:active{
    box-shadow:2px 2px 20px 2px #13bebe;
 }
+
+.reset{
+background:radial-gradient(#13bebe,#13243E);
+margin:15px 0 0 0 ;
+padding:10px 30px 5px 30px;
+border-radius:5px;
+color:#fff;
+font-size:1.5rem;
+outline:none;
+border:none;
+transition:all 0.4s ease-in-out;
+transform: scale(1);
+font-family:'Iceberg',cursive;
+}
+
+.reset:hover{
+transform: scale(1.1);
+}
+.reset:active{
+box-shadow:2px 2px 20px 2px #13bebe;
+}
