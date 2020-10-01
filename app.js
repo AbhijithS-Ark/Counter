@@ -7,6 +7,7 @@ const toinput = document.querySelector("#to");
 const generate = document.querySelector("#generate");
 let randomvalue = 0;
 let count;
+count = randomvalue;
 let mini = null, maxi = null;
 
 addCount.addEventListener('click', incrementcounter);
@@ -19,6 +20,12 @@ function incrementcounter() {
         if (count !== maxi) {
             count++;
         }
+    }
+
+    if (frominput.value === "" || toinput.value === ""){
+        count++;
+  
+
     }
 
     counter.innerHTML = count;
@@ -40,6 +47,12 @@ function decrementcounter() {
         if (count !== mini) {
             count--;
         }
+    }
+    
+    if (frominput.value === "" || toinput.value === ""){
+        count--;
+  
+
     }
 
     counter.innerHTML = count;
@@ -69,7 +82,7 @@ generate.addEventListener("click", (e) => {
                 e.preventDefault();
                 let basevalue = frominput.value;
                 let limitvalue = toinput.value;
-          
+
                 randomvalue = randomNumber(basevalue, limitvalue)
                 counter.innerHTML = randomvalue;
                 if (counter.innerHTML < '0') {
@@ -90,7 +103,7 @@ generate.addEventListener("click", (e) => {
                 alert("minimum value should be less than maximium")
             }
         }
-        else{
+        else {
             alert("enter valid inputs")
 
         }
@@ -102,7 +115,7 @@ generate.addEventListener("click", (e) => {
         mini = Number(min);
         maxi = Number(max)
 
-     
+
         return res = Math.floor(Math.random() * (maxi - mini + 1) + mini);
     }
 
