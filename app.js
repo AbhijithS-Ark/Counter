@@ -42,7 +42,7 @@ function incrementcounter() {
 function decrementcounter() {
 
 
-    if (mini) {
+    if (mini !== null) {
 
         if (count !== mini) {
             count--;
