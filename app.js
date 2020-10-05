@@ -14,6 +14,9 @@ addCount.addEventListener('click', incrementcounter);
 lowerCount.addEventListener('click', decrementcounter);
 reset.addEventListener('click', resetcall);
 
+/* set focus on start */
+frominput.focus();
+
 function incrementcounter() {
     if (maxi) {
 
