@@ -84,7 +84,7 @@ generate.addEventListener("click", (e) => {
                 let limitvalue = toinput.value;
 
                 randomvalue = randomNumber(basevalue, limitvalue)
-                counter.innerHTML = randomvalue;
+                counter.innerHTML = String(randomvalue);
                 if (counter.innerHTML < '0') {
                     counter.style.color = 'red';
                 }
