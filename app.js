@@ -116,7 +116,7 @@ generate.addEventListener("click", (e) => {
         maxi = Number(max)
 
 
-        return res = Math.floor(Math.random() * (maxi - mini + 1) + mini);
+        return Math.floor(Math.random() * (maxi - mini + 1) + mini);
     }
 
 
